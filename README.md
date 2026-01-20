@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🔥 Roast My Fridge
 
-## Getting Started
+An AI-powered recipe generator with attitude! Enter your random ingredients, get hilariously roasted by an AI chef, then receive an actual delicious recipe.
 
-First, run the development server:
+## 🎯 Features
 
+- **🤖 AI-Powered Roasting**: Uses Google Gemini 2.5 Flash to create sarcastic, Gordon Ramsay-style roasts
+- **👨‍🍳 Recipe Generation**: Converts your questionable ingredients into real, edible recipes
+- **✨ Beautiful UI**: Modern glassmorphic design with smooth animations
+- **⚡ Fast Response**: Optimized API with lazy loading for quick results
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **Next.js 16** (App Router)
+- **TypeScript**
+- **TailwindCSS**
+- **Lucide React** (Icons)
+
+### Backend
+- **Python 3.9+**
+- **FastAPI**
+- **Pydantic AI**
+- **Google Gemini API**
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18+
+- Python 3.9+
+- Google Gemini API Key
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/Shreshtha03/roast-my-fridge.git
+cd roast-my-fridge
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install frontend dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Install backend dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Create `.env` file in the root directory:
+```env
+GEMINI_API_KEY=your_api_key_here
+```
 
-## Learn More
+5. Run the development servers:
 
-To learn more about Next.js, take a look at the following resources:
+**Backend** (Terminal 1):
+```bash
+uvicorn api.index:app --reload --port 8000
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Frontend** (Terminal 2):
+```bash
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+6. Open [http://localhost:3000](http://localhost:3000)
 
-## Deploy on Vercel
+## 📦 Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Vercel Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Push to GitHub (already done!)
+2. Import project in Vercel
+3. Add environment variable: `GEMINI_API_KEY`
+4. Deploy!
+
+## 🎨 UI Features
+
+- Animated gradient background
+- Glassmorphic cards
+- Smooth hover effects
+- Responsive design
+- Loading states with animations
+
+## 🤝 Contributing
+
+Built for a university AI assignment showcasing:
+- Full-stack development
+- AI integration
+- Modern UI/UX
+- Production deployment
+
+## 📝 License
+
+MIT License
+
+## 👨‍💻 Author
+
+**Shreshtha Srivastava**
+- GitHub: [@Shreshtha03](https://github.com/Shreshtha03)
+
+---
+
+Made with 🔥 using Pydantic AI + Google Gemini
