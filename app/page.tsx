@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { ChefHat, Flame, Send, Utensils, AlertTriangle } from 'lucide-react';
+import { ChefHat, Flame, Utensils, AlertTriangle } from 'lucide-react';
 
 interface RecipeData {
   roast: string;
@@ -137,7 +137,7 @@ export default function Home() {
               <h2 className="text-xl font-bold text-rose-400 uppercase tracking-wider">The Roast</h2>
             </div>
             <p className="text-2xl md:text-3xl font-serif italic text-white leading-relaxed">
-              "{data.roast}"
+              &quot;{data.roast}&quot;
             </p>
           </div>
 
