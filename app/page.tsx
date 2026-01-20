@@ -81,21 +81,25 @@ export default function Home() {
       </div>
 
       {/* Input Section */}
-      <div className="w-full max-w-2xl mb-12 z-10">
-        <div className="bg-neutral-900/40 backdrop-blur-2xl rounded-3xl border border-rose-500/20 p-8 shadow-2xl">
-          <div className="flex flex-col md:flex-row gap-4">
+      <div className="w-full max-w-xl mb-12 z-10">
+        <div
+          className="backdrop-blur-md rounded-3xl border border-white/10 p-4 md:p-6 shadow-2xl"
+          style={{ backgroundColor: 'rgba(10, 10, 10, 0.8)' }}
+        >
+          <div className="flex flex-col gap-4">
             <input
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && handleRoast()}
               placeholder="e.g., banana, ketchup, leftover pizza..."
-              className="flex-1 bg-neutral-800/50 border border-neutral-700 rounded-2xl px-8 py-6 text-xl text-white placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent transition-all"
+              className="w-full border border-white/10 rounded-xl px-6 py-4 text-lg text-white placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent transition-all"
+              style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)', color: 'white' }}
             />
             <button
               onClick={handleRoast}
               disabled={loading}
-              className="bg-gradient-to-r from-rose-600 to-orange-600 hover:from-rose-500 hover:to-orange-500 text-white px-10 py-6 rounded-2xl text-xl font-bold transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3 shadow-lg hover:shadow-rose-500/50 hover:scale-105 active:scale-95 min-w-[180px]"
+              className="w-full bg-gradient-to-r from-rose-600 to-orange-600 hover:from-rose-500 hover:to-orange-500 text-white py-4 rounded-xl text-lg font-bold transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3 shadow-lg hover:shadow-rose-500/20 active:scale-[0.98]"
             >
               {loading ? (
                 <>

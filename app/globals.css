@@ -8,12 +8,8 @@
   --background-end-rgb: 0, 0, 0;
 }
 
-* {
-  color: white !important;
-}
-
 body {
-  color: white !important;
+  color: white;
   background:
     radial-gradient(ellipse at top, rgba(220, 38, 38, 0.15), transparent),
     radial-gradient(ellipse at bottom, rgba(249, 115, 22, 0.15), transparent),
